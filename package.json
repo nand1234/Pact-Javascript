@@ -1,0 +1,26 @@
+{
+  "name": "mochajs-pact-example",
+  "version": "1.0.0",
+  "description": "Mocha Pact example",
+  "main": "index.js",
+  "scripts": {
+    "test": "rimraf pacts && mocha mocha/consumer.js",
+    "test:consumer": "./node_modules/.bin/mocha test/consumer.spec.js",
+    "test:publish": "node test/publish.js",
+    "test:provider": "./node_modules/.bin/mocha test/provider.spec.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.2.2",
+    "axios": "^0.19.0",
+    "chai": "^3.5.0",
+    "mocha": "^5.1.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "superagent": "^5.2.1"
+  }
+}

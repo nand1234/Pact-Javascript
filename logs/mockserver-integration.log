@@ -1,0 +1,281 @@
+I, [2020-01-21T11:51:56.759559 #60516]  INFO -- : Registered expected interaction GET /api/rest/eai/v0/voucher_details?brand=BON&country=BE&extended=true&voucherId=436005948
+D, [2020-01-21T11:51:56.760557 #60516] DEBUG -- : {
+  "description": "a voucher equest with brnad, conutry, extended and voucher ID",
+  "providerState": "is not authenticated",
+  "request": {
+    "method": "GET",
+    "path": "/api/rest/eai/v0/voucher_details",
+    "query": {
+      "brand": [
+        "BON"
+      ],
+      "country": [
+        "BE"
+      ],
+      "extended": [
+        "true"
+      ],
+      "voucherId": [
+        "436005948"
+      ]
+    },
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "voucher": {
+        "id": "436005948",
+        "inventoryStorage": {
+          "site": "002",
+          "location": "evoucher",
+          "warehouse": "evoucher"
+        },
+        "expirationDate": "2022-01-15T00:00:00.000000+0000",
+        "status": "activate",
+        "product": {
+          "id": "1052111",
+          "type": "mev",
+          "sellableBrand": {
+            "code": "BON"
+          },
+          "sellableCountry": {
+            "code": "BE"
+          }
+        },
+        "voucherValue": {
+          "amount": 49.9,
+          "currencyCode": "EUR"
+        },
+        "currentBalance": {
+          "amount": 0,
+          "currencyCode": "EUR"
+        },
+        "type": "ebox",
+        "isBooked": false,
+        "isRedeemed": true,
+        "isInvoiced": false,
+        "isPreAuthorised": false,
+        "productSuperseding": {
+          "id": "1052111"
+        }
+      },
+      "activations": [
+        {
+          "id": "00000000000086566548",
+          "eventDate": "2020-01-15T16:06:42.000000+0000",
+          "eventAmount": {
+            "amount": 49.9,
+            "currencyCode": "EUR"
+          },
+          "status": "activate",
+          "reasonCode": "activationSales",
+          "sourceSalesOrder": {
+            "id": "SBBCOF20011527080"
+          },
+          "distributorPOS": {
+            "id": "00505982"
+          },
+          "discount": {
+            "amount": 0,
+            "currencyCode": "EUR"
+          }
+        }
+      ],
+      "redemptions": [
+        {
+          "id": "00000000000086582548",
+          "eventDate": "2020-01-17T21:00:00.000000+0000",
+          "eventAmount": {
+            "amount": 20,
+            "currencyCode": "EUR"
+          },
+          "status": "activate",
+          "reasonCode": "redemptionVoucher",
+          "sourceSalesOrder": {
+            "id": "SBBCOF20011527080"
+          },
+          "experience": {
+            "id": "1088380"
+          },
+          "partner": {
+            "id": "00544535"
+          }
+        },
+        {
+          "id": "00000000000086582565",
+          "eventDate": "2020-01-17T21:00:00.000000+0000",
+          "eventAmount": {
+            "amount": 29.9,
+            "currencyCode": "EUR"
+          },
+          "status": "activate",
+          "reasonCode": "redemptionVoucher",
+          "sourceSalesOrder": {
+            "id": "VMSO655731673"
+          },
+          "experience": {
+            "id": "1088380"
+          },
+          "partner": {
+            "id": "00544535"
+          }
+        }
+      ],
+      "booking": {
+        "experience": {
+          "id": "1088380"
+        },
+        "partner": {
+          "id": "00544535"
+        },
+        "dateTime": "2020-01-17T21:00:00.000000+0000"
+      },
+      "addSalesVouchers": [
+
+      ],
+      "exchangeValue": 49.9
+    }
+  }
+}
+I, [2020-01-21T11:51:56.782566 #60516]  INFO -- : Received request GET /api/rest/eai/v0/voucher_details?brand=BON&country=BE&extended=true&voucherId=436005948
+D, [2020-01-21T11:51:56.782566 #60516] DEBUG -- : {
+  "path": "/api/rest/eai/v0/voucher_details",
+  "query": "brand=BON&country=BE&extended=true&voucherId=436005948",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "axios/0.19.0",
+    "Host": "localhost:8992",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-01-21T11:51:56.783565 #60516]  INFO -- : Found matching response for GET /api/rest/eai/v0/voucher_details?brand=BON&country=BE&extended=true&voucherId=436005948
+D, [2020-01-21T11:51:56.784562 #60516] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "voucher": {
+      "id": "436005948",
+      "inventoryStorage": {
+        "site": "002",
+        "location": "evoucher",
+        "warehouse": "evoucher"
+      },
+      "expirationDate": "2022-01-15T00:00:00.000000+0000",
+      "status": "activate",
+      "product": {
+        "id": "1052111",
+        "type": "mev",
+        "sellableBrand": {
+          "code": "BON"
+        },
+        "sellableCountry": {
+          "code": "BE"
+        }
+      },
+      "voucherValue": {
+        "amount": 49.9,
+        "currencyCode": "EUR"
+      },
+      "currentBalance": {
+        "amount": 0,
+        "currencyCode": "EUR"
+      },
+      "type": "ebox",
+      "isBooked": false,
+      "isRedeemed": true,
+      "isInvoiced": false,
+      "isPreAuthorised": false,
+      "productSuperseding": {
+        "id": "1052111"
+      }
+    },
+    "activations": [
+      {
+        "id": "00000000000086566548",
+        "eventDate": "2020-01-15T16:06:42.000000+0000",
+        "eventAmount": {
+          "amount": 49.9,
+          "currencyCode": "EUR"
+        },
+        "status": "activate",
+        "reasonCode": "activationSales",
+        "sourceSalesOrder": {
+          "id": "SBBCOF20011527080"
+        },
+        "distributorPOS": {
+          "id": "00505982"
+        },
+        "discount": {
+          "amount": 0,
+          "currencyCode": "EUR"
+        }
+      }
+    ],
+    "redemptions": [
+      {
+        "id": "00000000000086582548",
+        "eventDate": "2020-01-17T21:00:00.000000+0000",
+        "eventAmount": {
+          "amount": 20,
+          "currencyCode": "EUR"
+        },
+        "status": "activate",
+        "reasonCode": "redemptionVoucher",
+        "sourceSalesOrder": {
+          "id": "SBBCOF20011527080"
+        },
+        "experience": {
+          "id": "1088380"
+        },
+        "partner": {
+          "id": "00544535"
+        }
+      },
+      {
+        "id": "00000000000086582565",
+        "eventDate": "2020-01-17T21:00:00.000000+0000",
+        "eventAmount": {
+          "amount": 29.9,
+          "currencyCode": "EUR"
+        },
+        "status": "activate",
+        "reasonCode": "redemptionVoucher",
+        "sourceSalesOrder": {
+          "id": "VMSO655731673"
+        },
+        "experience": {
+          "id": "1088380"
+        },
+        "partner": {
+          "id": "00544535"
+        }
+      }
+    ],
+    "booking": {
+      "experience": {
+        "id": "1088380"
+      },
+      "partner": {
+        "id": "00544535"
+      },
+      "dateTime": "2020-01-17T21:00:00.000000+0000"
+    },
+    "addSalesVouchers": [
+
+    ],
+    "exchangeValue": 49.9
+  }
+}
+I, [2020-01-21T11:51:56.803558 #60516]  INFO -- : Verifying - interactions matched
+I, [2020-01-21T11:51:56.815560 #60516]  INFO -- : Cleared interactions
+I, [2020-01-21T11:51:56.825574 #60516]  INFO -- : Merging interactions into pact for VM6-86 at C:/SalesforceCodeRepo/salesforce-smartbox/mocha/pacts/pmp-voucher-auth-vm6-86.json
